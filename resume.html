@@ -1,0 +1,447 @@
+﻿<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume | Devin Emmans-Bosley</title>    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/modern-styles.css"><script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            50: '#DAEAEE',
+                            100: '#C4D5E5',
+                            200: '#AEC0DC',
+                            300: '#96A0B8',
+                            400: '#6089D4',
+                            500: '#2B6DE0',
+                            600: '#2137DE',
+                            700: '#272D7B',
+                            800: '#1E2463',
+                            900: '#14183F',
+                        },
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-gray-200 min-h-screen transition-colors duration-300">
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-white/70 dark:bg-gray-800/70 shadow-md">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-primary-600 dark:text-primary-400">GoDevTech</a>
+            <div class="flex items-center space-x-6">
+                <a href="index.html" class="text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">Home</a>
+                <a href="resume.html" class="text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">Resume</a>
+                <a href="blog.html" class="text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">Blog</a>
+                <button id="theme-toggle" class="p-2 rounded-full bg-gray-200 dark:bg-gray-700 focus:outline-none">
+                    <!-- Sun icon for dark mode -->
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 hidden dark:block text-yellow-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+                    </svg>
+                    <!-- Moon icon for light mode -->
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 block dark:hidden text-gray-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>    <!-- Resume Header -->
+    <header class="min-h-screen flex flex-col justify-center items-center text-center px-6 py-12">
+        <div class="max-w-5xl mx-auto w-full">
+            <div class="glass-card p-8 md:p-12 rounded-2xl relative overflow-hidden hover-lift shadow-xl border border-white/20 backdrop-blur animate-on-scroll" data-animate>
+                <!-- Background decoration elements -->
+                <div class="absolute -top-10 -right-10 w-40 h-40 bg-primary-400/10 rounded-full blur-2xl"></div>
+                <div class="absolute -bottom-20 -left-10 w-60 h-60 bg-primary-500/10 rounded-full blur-3xl"></div>
+                
+                <div class="relative z-10">                <div class="relative z-10">
+                    <div class="mb-6 flex justify-center">
+                        <div class="relative w-32 h-32 rounded-full overflow-hidden border-4 border-primary-500 dark:border-primary-400 shadow-lg hover-lift">
+                            <img src="assets/Pictues/Dev-PFP.jpeg" alt="Devin Emmans-Bosley" class="w-full h-full object-cover profile-picture">
+                        </div>
+                    </div>
+                    <h1 class="text-4xl md:text-5xl font-bold tracking-wide mb-4 text-primary-600 dark:text-primary-400">Devin Emmans-Bosley</h1>
+                    <p class="text-lg md:text-xl text-slate-300 mt-4 mb-6">
+                        <span class="typewriter-container" 
+                              data-type='["Cloud Engineer & DevSecOps Enthusiast", "AWS Solutions Architect", "Security-Focused Infrastructure Specialist", "Passionate about cloud innovation"]'
+                              data-typing-speed="70"
+                              data-delay-before-delete="2500"
+                              data-delay-before-type="700">
+                            Cloud Engineer & DevSecOps Enthusiast
+                        </span>
+                    </p>
+                    <div class="flex flex-wrap justify-center gap-4 mb-6">
+                        <a href="mailto:emmansdevin@gmail.com" class="flex items-center gap-2 text-gray-600 dark:text-gray-400 hover:text-primary-500 dark:hover:text-primary-400">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                            </svg>
+                            emmansdevin@gmail.com
+                        </a>
+                        <a href="https://godevtech.cloud" target="_blank" class="flex items-center gap-2 text-gray-600 dark:text-gray-400 hover:text-primary-500 dark:hover:text-primary-400">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"></path>
+                        </svg>
+                        godevtech.cloud
+                    </a>
+                    <a href="https://github.com/DevHAXog" target="_blank" class="flex items-center gap-2 text-gray-600 dark:text-gray-400 hover:text-primary-500 dark:hover:text-primary-400">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd"></path>
+                        </svg>
+                        GitHub
+                    </a>
+                    <a href="https://www.linkedin.com/in/devin-emmans-bosley-491bb9203/" target="_blank" class="flex items-center gap-2 text-gray-600 dark:text-gray-400 hover:text-primary-500 dark:hover:text-primary-400">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"></path>
+                        </svg>
+                        LinkedIn                    </a>
+                </div>
+                <p class="text-gray-600 dark:text-gray-400">Culpeper, VA</p>
+                </div>
+            </div>
+        </div>
+    </header><!-- Resume Content -->
+    <main class="pb-20">
+        <div class="container mx-auto px-4">
+            <div class="max-w-5xl mx-auto"><!-- Summary Section -->
+                <section class="mb-12 animate-on-scroll" data-animate="fade-in">
+                    <div class="glass-card p-8 rounded-2xl">
+                        <h2 class="text-2xl font-bold mb-6 text-primary-600 dark:text-primary-400">Summary</h2>
+                        <p class="text-lg">
+                            Cloud Enthusiast, IT professional transitioning into Cloud Engineering and DevSecOps. Skilled in scripting (Python, Bash), system administration, vulnerability remediation, and secure infrastructure design. Actively building cloud-native projects using AWS, Infrastructure as Code (Terraform), and automation tooling. Proven communicator, technical mentor, and hands-on problem solver with a foundation in security.
+                        </p>
+                    </div>
+                </section>                <!-- Work Experience Section -->
+                <section class="mb-12 animate-on-scroll" data-animate="slide-up">
+                    <div class="glass-card p-8 rounded-2xl">
+                        <h2 class="text-2xl font-bold mb-6 text-primary-600 dark:text-primary-400">Professional Experience</h2>
+                        
+                        <!-- Job 1 -->
+                        <div class="mb-8">
+                            <div class="flex flex-col md:flex-row md:items-center justify-between mb-3">
+                                <h3 class="text-xl font-semibold">Tier 2 Help Desk Technician / Team Trainer</h3>
+                                <div class="text-sm text-gray-600 dark:text-gray-400 mt-1 md:mt-0">Jan 2025 – Present</div>
+                            </div>
+                            <div class="text-lg font-medium mb-3">Agenda Consulting, Fredericksburg, VA</div>
+                            <ul class="list-disc list-outside ml-5 space-y-2">
+                                <li>Led technical escalations across 5,000+ endpoints; implemented SOPs and trained Tier 1 staff, reducing escalations by 40%.</li>
+                                <li>Automated endpoint tasks and remote remediations using N-Able RMM; optimized incident workflows to improve response time.</li>
+                                <li>Administered Microsoft 365 and JumpCloud: user lifecycle, MFA, SSO, and device provisioning across hybrid environments.</li>
+                                <li>Orchestrated two MSP-to-internal migrations with minimal downtime, laying groundwork for centralized infrastructure control.</li>
+                            </ul>
+                        </div>
+
+                        <!-- Job 2 -->
+                        <div>
+                            <div class="flex flex-col md:flex-row md:items-center justify-between mb-3">
+                                <h3 class="text-xl font-semibold">IT Support Specialist</h3>
+                                <div class="text-sm text-gray-600 dark:text-gray-400 mt-1 md:mt-0">Aug 2023 – Nov 2024</div>
+                            </div>
+                            <div class="text-lg font-medium mb-3">Catawba Corporation, Middleburg, VA</div>
+                            <ul class="list-disc list-outside ml-5 space-y-2">
+                                <li>Delivered multi-site support for on-prem systems and cloud-linked services; managed AD, DHCP, and local network configurations.</li>
+                                <li>Maintained Windows servers and endpoints through regular patching, hardware swaps, and preventive maintenance.</li>
+                                <li>Authored internal IT documentation and playbooks to standardize support practices and improve system uptime.</li>
+                                <li>Conducted end-user training on phishing, password security, and endpoint best practices to strengthen overall security posture.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>                <!-- Projects Section -->
+                <section class="mb-12 animate-on-scroll" data-animate="slide-up">
+                    <div class="glass-card p-8 rounded-2xl">
+                        <h2 class="text-2xl font-bold mb-6 text-primary-600 dark:text-primary-400">Projects</h2>
+                        <div>
+                            <div class="flex flex-col md:flex-row md:items-center justify-between mb-3">
+                                <h3 class="text-xl font-semibold">Cloud Resume Challenge</h3>
+                                <div class="text-sm text-gray-600 dark:text-gray-400 mt-1 md:mt-0">June 2025 – Ongoing</div>
+                            </div>
+                            <div class="text-lg font-medium mb-3">
+                                <a href="https://godevtech.cloud" target="_blank" class="text-primary-500 hover:underline">godevtech.cloud</a>
+                            </div>
+                            <ul class="list-disc list-outside ml-5 space-y-2">
+                                <li>Deployed static HTML resume using AWS S3, CloudFront, and Route 53 via Porkbun DNS.</li>
+                                <li>Implemented site availability monitoring using CloudWatch.</li>
+                                <li>Working on Lambda + DynamoDB backend for real-time visitor count.</li>
+                                <li>Automating deployment with GitHub Actions.</li>
+                                <li>Built a 3-tier AWS architecture (S3, EC2, RDS) with Terraform.</li>
+                                <li>Focused on security best practices: no public EC2 access, encryption, minimal IAM.</li>
+                                <li>Integrated GuardDuty, IAM roles/policies, and logging with CloudTrail.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>                <!-- Education Section -->
+                <section class="mb-12 animate-on-scroll" data-animate="slide-up">
+                    <div class="max-w-5xl mx-auto">
+                        <div class="glass-card p-8 rounded-2xl">
+                            <h2 class="text-2xl font-bold mb-6 text-primary-600 dark:text-primary-400 text-center">Education</h2>
+                            <div class="modern-grid-2 gap-8">
+                                <div class="text-center">
+                                    <div class="mb-8">
+                                        <h3 class="text-xl font-semibold mb-2">Western Governors University</h3>
+                                        <div class="text-lg font-medium mb-1">M.S. Cybersecurity and Information Assurance</div>
+                                        <div class="text-sm text-gray-600 dark:text-gray-400">Salt Lake City, Utah — April 2025</div>
+                                    </div>
+                                </div><div>
+                                    <h3 class="text-lg font-semibold mb-4 text-primary-600 dark:text-primary-400 text-center">Graduate Projects</h3>
+                                    <div class="mb-6 animate-on-scroll hover-subtle" data-animate="fade-in">
+                                        <div class="glass-card-light p-4 rounded-lg text-center">
+                                            <h4 class="text-base font-bold mb-1">Enterprise Penetration Testing Engagement</h4>
+                                            <p class="text-sm italic text-gray-600 dark:text-gray-400 mb-3">Penetration Testing and Vulnerability Analysis</p>
+                                            <ul class="list-disc list-inside space-y-1 text-sm text-left inline-block">
+                                                <li>Developed full-scope penetration testing plan for simulated corporate network</li>
+                                                <li>Identified 15+ critical vulnerabilities (OWASP Top 10, misconfigurations)</li>
+                                                <li>Utilized Kali Linux, Metasploit, and Burp Suite for exploit development</li>
+                                                <li>Created remediation roadmap reducing attack surface by 40%</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="mb-6 animate-on-scroll hover-subtle" data-animate="fade-in">
+                                        <div class="glass-card-light p-4 rounded-lg text-center">
+                                            <h4 class="text-base font-bold mb-1">Zero-Trust Cloud Security Implementation</h4>
+                                            <p class="text-sm italic text-gray-600 dark:text-gray-400 mb-3">Secure Cloud Configuration</p>
+                                            <ul class="list-disc list-inside space-y-1 text-sm text-left inline-block">
+                                                <li>Designed and deployed AWS IAM policies following least-privilege principles</li>
+                                                <li>Implemented CloudTrail monitoring and S3 bucket encryption controls</li>
+                                                <li>Achieved 70% reduction in unauthorized access attempts</li>
+                                                <li>Addressed 5 GDPR/HIPAA compliance requirements through technical controls</li>
+                                            </ul>
+                                        </div>
+                                    </div><div class="animate-on-scroll" data-animate="fade-in">
+                                        <div class="glass-card-light p-4 rounded-lg hover-lift text-center">
+                                            <h4 class="text-base font-bold mb-1">Enterprise Cybersecurity Program Development</h4>
+                                            <p class="text-sm italic text-gray-600 dark:text-gray-400 mb-3">Cybersecurity Graduate Capstone</p>
+                                            <ul class="list-disc list-inside space-y-1 text-sm text-left inline-block">
+                                                <li>Architected NIST CSF-aligned security program for financial services case study</li>
+                                                <li>Developed incident response playbooks reducing MTTR by 65%</li>
+                                                <li>Created risk management framework addressing ransomware/supply chain threats</li>
+                                                <li>Quantified $250K potential annual breach cost reduction through controls</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>                            </div>                        </div>
+                    </div>
+                </section><!-- Certifications Section -->
+                <section class="mb-12 animate-on-scroll" data-animate="fade-in">
+                    <div class="max-w-5xl mx-auto">
+                        <div class="glass-card p-8 rounded-2xl">
+                            <h2 class="text-3xl font-bold mb-8 text-primary-600 dark:text-primary-400 text-center">Certifications</h2>
+                            
+                            <!-- Filter Buttons -->
+                            <div class="flex justify-center flex-wrap gap-4 mb-10">
+                                <button class="cert-filter-btn active px-6 py-3 text-sm rounded-full bg-slate-700 text-white font-medium transition-all duration-300 hover:scale-105 hover:shadow-lg" data-filter="all">All Certifications</button>
+                                <button class="cert-filter-btn px-6 py-3 text-sm rounded-full bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-slate-300 font-medium transition-all duration-300 hover:scale-105 hover:shadow-lg" data-filter="current">Current</button>
+                                <button class="cert-filter-btn px-6 py-3 text-sm rounded-full bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-slate-300 font-medium transition-all duration-300 hover:scale-105 hover:shadow-lg" data-filter="planned">Planned</button>
+                            </div>                            <!-- Certifications Grid -->
+                            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-6 gap-y-10"><!-- Current Certifications -->
+                                <div class="bg-white/10 dark:bg-slate-800/20 backdrop-blur border border-white/20 dark:border-slate-700/30 shadow-lg p-6 rounded-xl flex flex-col items-center text-center cert-card transition-all duration-300 hover:scale-105 hover:shadow-xl hover:bg-white/15 dark:hover:bg-slate-800/30" data-category="current">
+                                    <div class="mb-4">
+                                        <span class="bg-green-500/10 text-green-400 rounded-full px-3 py-1 text-xs font-medium">Current</span>
+                                    </div>
+                                    <img src="assets/cert-logos/comptia-security-plus.png" alt="CompTIA Security+" class="h-20 mb-4 object-contain">
+                                    <h3 class="text-lg font-semibold mb-2 text-gray-800 dark:text-gray-200">CompTIA Security+</h3>
+                                </div>
+                                  <div class="bg-white/10 dark:bg-slate-800/20 backdrop-blur border border-white/20 dark:border-slate-700/30 shadow-lg p-6 rounded-xl flex flex-col items-center text-center cert-card transition-all duration-300 hover:scale-105 hover:shadow-xl hover:bg-white/15 dark:hover:bg-slate-800/30" data-category="current">
+                                    <div class="mb-4">
+                                        <span class="bg-green-500/10 text-green-400 rounded-full px-3 py-1 text-xs font-medium">Current</span>
+                                    </div>
+                                    <img src="assets/cert-logos/comptia-network-plus.png" alt="CompTIA Network+" class="h-20 mb-4 object-contain">
+                                    <h3 class="text-lg font-semibold mb-2 text-gray-800 dark:text-gray-200">CompTIA Network+</h3>
+                                </div>
+                                
+                                <div class="bg-white/10 dark:bg-slate-800/20 backdrop-blur border border-white/20 dark:border-slate-700/30 shadow-lg p-6 rounded-xl flex flex-col items-center text-center cert-card transition-all duration-300 hover:scale-105 hover:shadow-xl hover:bg-white/15 dark:hover:bg-slate-800/30" data-category="current">
+                                    <div class="mb-4">
+                                        <span class="bg-green-500/10 text-green-400 rounded-full px-3 py-1 text-xs font-medium">Current</span>
+                                    </div>
+                                    <img src="assets/cert-logos/comptia-a-plus.png" alt="CompTIA A+" class="h-20 mb-4 object-contain">
+                                    <h3 class="text-lg font-semibold mb-2 text-gray-800 dark:text-gray-200">CompTIA A+</h3>
+                                </div>
+                                
+                                <div class="bg-white/10 dark:bg-slate-800/20 backdrop-blur border border-white/20 dark:border-slate-700/30 shadow-lg p-6 rounded-xl flex flex-col items-center text-center cert-card transition-all duration-300 hover:scale-105 hover:shadow-xl hover:bg-white/15 dark:hover:bg-slate-800/30" data-category="current">
+                                    <div class="mb-4">
+                                        <span class="bg-green-500/10 text-green-400 rounded-full px-3 py-1 text-xs font-medium">Current</span>
+                                    </div>
+                                    <img src="assets/cert-logos/comptia-cysa-plus.png" alt="CompTIA CySA+" class="h-20 mb-4 object-contain">
+                                    <h3 class="text-lg font-semibold mb-2 text-gray-800 dark:text-gray-200">CompTIA CySA+</h3>
+                                </div>
+                                
+                                <div class="bg-white/10 dark:bg-slate-800/20 backdrop-blur border border-white/20 dark:border-slate-700/30 shadow-lg p-6 rounded-xl flex flex-col items-center text-center cert-card transition-all duration-300 hover:scale-105 hover:shadow-xl hover:bg-white/15 dark:hover:bg-slate-800/30" data-category="current">
+                                    <div class="mb-4">
+                                        <span class="bg-green-500/10 text-green-400 rounded-full px-3 py-1 text-xs font-medium">Current</span>
+                                    </div>
+                                    <img src="assets/cert-logos/comptia-pentest-plus.png" alt="CompTIA PenTest+" class="h-20 mb-4 object-contain">
+                                    <h3 class="text-lg font-semibold mb-2 text-gray-800 dark:text-gray-200">CompTIA PenTest+</h3>
+                                </div>
+                                
+                                <div class="bg-white/10 dark:bg-slate-800/20 backdrop-blur border border-white/20 dark:border-slate-700/30 shadow-lg p-6 rounded-xl flex flex-col items-center text-center cert-card transition-all duration-300 hover:scale-105 hover:shadow-xl hover:bg-white/15 dark:hover:bg-slate-800/30" data-category="current">
+                                    <div class="mb-4">
+                                        <span class="bg-green-500/10 text-green-400 rounded-full px-3 py-1 text-xs font-medium">Current</span>
+                                    </div>
+                                    <img src="assets/cert-logos/lpi-linux-essentials.png" alt="LPI Linux Essentials" class="h-20 mb-4 object-contain">
+                                    <h3 class="text-lg font-semibold mb-2 text-gray-800 dark:text-gray-200">LPI Linux Essentials</h3>
+                                </div>
+                                
+                                <div class="bg-white/10 dark:bg-slate-800/20 backdrop-blur border border-white/20 dark:border-slate-700/30 shadow-lg p-6 rounded-xl flex flex-col items-center text-center cert-card transition-all duration-300 hover:scale-105 hover:shadow-xl hover:bg-white/15 dark:hover:bg-slate-800/30" data-category="current">
+                                    <div class="mb-4">
+                                        <span class="bg-green-500/10 text-green-400 rounded-full px-3 py-1 text-xs font-medium">Current</span>
+                                    </div>
+                                    <img src="assets/cert-logos/itil-4.png" alt="ITIL 4" class="h-20 mb-4 object-contain">
+                                    <h3 class="text-lg font-semibold mb-2 text-gray-800 dark:text-gray-200">ITIL v4</h3>
+                                </div>
+
+                                <!-- Planned Certifications -->
+                                <div class="bg-white/10 dark:bg-slate-800/20 backdrop-blur border border-white/20 dark:border-slate-700/30 shadow-lg p-6 rounded-xl flex flex-col items-center text-center cert-card transition-all duration-300 hover:scale-105 hover:shadow-xl hover:bg-white/15 dark:hover:bg-slate-800/30" data-category="planned">
+                                    <div class="mb-4">
+                                        <span class="bg-blue-500/10 text-blue-400 rounded-full px-3 py-1 text-xs font-medium">Planned</span>
+                                    </div>
+                                    <img src="assets/cert-logos/aws-certified-cloud-practitioner.png" alt="AWS Certified Cloud Practitioner" class="h-20 mb-4 object-contain">
+                                    <h3 class="text-lg font-semibold mb-2 text-gray-800 dark:text-gray-200">AWS Cloud Practitioner</h3>
+                                </div>
+                                
+                                <div class="bg-white/10 dark:bg-slate-800/20 backdrop-blur border border-white/20 dark:border-slate-700/30 shadow-lg p-6 rounded-xl flex flex-col items-center text-center cert-card transition-all duration-300 hover:scale-105 hover:shadow-xl hover:bg-white/15 dark:hover:bg-slate-800/30" data-category="planned">
+                                    <div class="mb-4">
+                                        <span class="bg-blue-500/10 text-blue-400 rounded-full px-3 py-1 text-xs font-medium">Planned</span>
+                                    </div>
+                                    <img src="assets/cert-logos/aws-certified-solutions-Architect.png" alt="AWS Certified Solutions Architect" class="h-20 mb-4 object-contain">
+                                    <h3 class="text-lg font-semibold mb-2 text-gray-800 dark:text-gray-200">AWS Solutions Architect</h3>
+                                </div>
+                                
+                                <div class="bg-white/10 dark:bg-slate-800/20 backdrop-blur border border-white/20 dark:border-slate-700/30 shadow-lg p-6 rounded-xl flex flex-col items-center text-center cert-card transition-all duration-300 hover:scale-105 hover:shadow-xl hover:bg-white/15 dark:hover:bg-slate-800/30" data-category="planned">
+                                    <div class="mb-4">
+                                        <span class="bg-blue-500/10 text-blue-400 rounded-full px-3 py-1 text-xs font-medium">Planned</span>
+                                    </div>
+                                    <img src="assets/cert-logos/aws-certified-sysops-Administrator.png" alt="AWS Certified SysOps Administrator" class="h-20 mb-4 object-contain">
+                                    <h3 class="text-lg font-semibold mb-2 text-gray-800 dark:text-gray-200">AWS SysOps Administrator</h3>
+                                </div>
+                                
+                                <div class="bg-white/10 dark:bg-slate-800/20 backdrop-blur border border-white/20 dark:border-slate-700/30 shadow-lg p-6 rounded-xl flex flex-col items-center text-center cert-card transition-all duration-300 hover:scale-105 hover:shadow-xl hover:bg-white/15 dark:hover:bg-slate-800/30" data-category="planned">
+                                    <div class="mb-4">
+                                        <span class="bg-blue-500/10 text-blue-400 rounded-full px-3 py-1 text-xs font-medium">Planned</span>
+                                    </div>
+                                    <img src="assets/cert-logos/aws-certified-devops-Engineer.png" alt="AWS Certified DevOps Engineer" class="h-20 mb-4 object-contain">
+                                    <h3 class="text-lg font-semibold mb-2 text-gray-800 dark:text-gray-200">AWS DevOps Engineer</h3>
+                                </div>
+                                
+                                <div class="bg-white/10 dark:bg-slate-800/20 backdrop-blur border border-white/20 dark:border-slate-700/30 shadow-lg p-6 rounded-xl flex flex-col items-center text-center cert-card transition-all duration-300 hover:scale-105 hover:shadow-xl hover:bg-white/15 dark:hover:bg-slate-800/30" data-category="planned">
+                                    <div class="mb-4">
+                                        <span class="bg-blue-500/10 text-blue-400 rounded-full px-3 py-1 text-xs font-medium">Planned</span>
+                                    </div>
+                                    <img src="assets/cert-logos/aws-certified-Developer-Associate.png" alt="AWS Certified Developer – Associate" class="h-20 mb-4 object-contain">
+                                    <h3 class="text-lg font-semibold mb-2 text-gray-800 dark:text-gray-200">AWS Developer – Associate</h3>
+                                </div>                            </div>
+                        </div>
+                    </div>
+                </section><!-- Skills Section -->                <section class="mb-12 animate-on-scroll animate-fade-in animate-delay-300">
+                    <div class="glass-card p-8 rounded-2xl">
+                        <h2 class="text-2xl font-bold mb-6 text-primary-600 dark:text-primary-400">Skills</h2>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                            <div>
+                                <h3 class="text-lg font-semibold mb-4">Cloud & DevOps</h3>
+                                <div class="flex flex-wrap">
+                                    <span class="skill-tag">AWS</span>
+                                    <span class="skill-tag">GitHub Actions</span>
+                                    <span class="skill-tag">Terraform</span>
+                                    <span class="skill-tag">CI/CD</span>
+                                    <span class="skill-tag">CloudWatch</span>
+                                    <span class="skill-tag">Lambda</span>
+                                    <span class="skill-tag">S3</span>
+                                    <span class="skill-tag">CloudFront</span>
+                                    <span class="skill-tag">Route 53</span>
+                                </div>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-semibold mb-4">Security & Infrastructure</h3>
+                                <div class="flex flex-wrap">
+                                    <span class="skill-tag">Kali Linux</span>
+                                    <span class="skill-tag">pfSense</span>
+                                    <span class="skill-tag">Sophos MDR/EDR</span>
+                                    <span class="skill-tag">GuardDuty</span>
+                                    <span class="skill-tag">JumpCloud</span>
+                                    <span class="skill-tag">Active Directory</span>
+                                    <span class="skill-tag">IAM</span>
+                                    <span class="skill-tag">MFA</span>
+                                    <span class="skill-tag">SSO</span>
+                                </div>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-semibold mb-4">Scripting & Coding</h3>
+                                <div class="flex flex-wrap">
+                                    <span class="skill-tag">Python</span>
+                                    <span class="skill-tag">Bash</span>
+                                    <span class="skill-tag">Java</span>
+                                    <span class="skill-tag">JSON</span>
+                                    <span class="skill-tag">YAML</span>
+                                    <span class="skill-tag">HTML/CSS</span>
+                                    <span class="skill-tag">JavaScript</span>
+                                </div>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-semibold mb-4">Other Tools</h3>
+                                <div class="flex flex-wrap">
+                                    <span class="skill-tag">Microsoft 365 Admin</span>
+                                    <span class="skill-tag">Metasploit</span>
+                                    <span class="skill-tag">Burp Suite</span>
+                                    <span class="skill-tag">Nessus</span>
+                                    <span class="skill-tag">N-Able RMM</span>
+                                    <span class="skill-tag">PowerShell</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>                <!-- Career Goals Section -->
+                <section class="animate-on-scroll animate-fade-in animate-delay-350">
+                    <div class="glass-card p-8 rounded-2xl">
+                        <h2 class="text-2xl font-bold mb-6 text-primary-600 dark:text-primary-400">Career Goals</h2>
+                        <p class="text-lg mb-4">
+                            My goal is to continue developing expertise in cloud architecture and DevSecOps practices, ultimately contributing to secure, scalable, and resilient cloud solutions. I aim to:
+                        </p>
+                        <ul class="list-disc list-outside ml-5 space-y-2">
+                            <li>Develop deeper expertise in AWS infrastructure and security services</li>
+                            <li>Master Infrastructure as Code through practical projects</li>
+                            <li>Combine cloud engineering with security practices</li>
+                            <li>Contribute to open-source projects related to cloud automation</li>
+                            <li>Pursue additional AWS certifications beyond Cloud Practitioner</li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-8 bg-gray-100 dark:bg-gray-800/80 text-center">
+        <div class="container mx-auto px-4">
+            <p class="mb-4">© 2025 Devin Emmans-Bosley | Cloud Resume Challenge</p>
+            <div class="flex justify-center space-x-4">
+                <a href="https://github.com/DevHAXog" target="_blank" class="text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd"></path>
+                    </svg>
+                </a>
+                <a href="https://www.linkedin.com/in/devin-emmans-bosley-491bb9203/" target="_blank" class="text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"></path>
+                    </svg>
+                </a>
+                <a href="mailto:emmansdevin@gmail.com" class="text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                    </svg>
+                </a>
+                <a href="https://godevtech.cloud" class="text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"></path>
+                    </svg>
+                </a>
+            </div>
+        </div>    </footer>    <script src="js/modern-animations.js"></script>
+    <script src="js/enhanced-scroll-animations.js"></script>
+    <script src="js/modern-main.js"></script>
+    <script src="js/typewriter.js"></script>
+</body>
+</html>

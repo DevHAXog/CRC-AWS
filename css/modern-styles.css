@@ -1,0 +1,336 @@
+/**
+ * Modern Minimal Animation Styles
+ * Clean, performant CSS using modern techniques
+ */
+
+/* Reset and base animation styles */
+:root {
+  --animation-duration: 0.6s;
+  --animation-easing: cubic-bezier(0.4, 0, 0.2, 1);
+  --animation-delay: 0.1s;
+}
+
+/* Respect reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --animation-duration: 0s;
+    --animation-delay: 0s;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Modern glass morphism effect */
+.glass-card {
+  @apply backdrop-blur-lg bg-white/10 dark:bg-gray-800/10 border border-white/20 dark:border-gray-700/20;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.glass-card-light {
+  @apply backdrop-blur-sm bg-white/5 dark:bg-gray-800/5 border border-white/10 dark:border-gray-700/10;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+}
+
+/* Modern button styles with subtle animations */
+.btn-primary {
+  @apply px-6 py-3 bg-primary-600 dark:bg-primary-500 text-white rounded-lg font-medium;
+  @apply transition-all duration-300 ease-in-out;
+  @apply hover:bg-primary-700 dark:hover:bg-primary-600 hover:scale-105 hover:shadow-lg;
+  @apply focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2;
+  @apply active:scale-95;
+}
+
+.btn-secondary {
+  @apply px-6 py-3 bg-transparent border-2 border-primary-600 dark:border-primary-400 text-primary-600 dark:text-primary-400 rounded-lg font-medium;
+  @apply transition-all duration-300 ease-in-out;
+  @apply hover:bg-primary-600 dark:hover:bg-primary-500 hover:text-white hover:scale-105 hover:shadow-lg;
+  @apply focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2;
+  @apply active:scale-95;
+}
+
+/* Tech badges with modern styling */
+.tech-badge {
+  @apply inline-flex items-center px-3 py-1 rounded-full text-sm font-medium;
+  @apply bg-primary-100 dark:bg-primary-900/30 text-primary-700 dark:text-primary-300;
+  @apply transition-all duration-200 ease-in-out;
+  @apply hover:bg-primary-200 dark:hover:bg-primary-800/50 hover:scale-105;
+}
+
+/* Smooth transitions for theme switching */
+.theme-transition {
+  @apply transition-colors duration-300 ease-in-out;
+}
+
+/* Modern hover effects */
+.hover-lift {
+  @apply transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-lg;
+}
+
+.hover-glow {
+  @apply transition-all duration-300 ease-in-out hover:shadow-xl;
+}
+
+.hover-glow:hover {
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04), 0 0 0 1px theme('colors.primary.500' / 0.1);
+}
+
+.hover-subtle {
+  @apply transition-all duration-200 ease-in-out hover:-translate-y-1;
+}
+
+/* Navigation enhancements */
+nav {
+  @apply transition-all duration-300 ease-in-out;
+}
+
+nav a {
+  @apply transition-colors duration-200 ease-in-out;
+  position: relative;
+}
+
+nav a::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  @apply bg-primary-600 dark:bg-primary-400;
+  @apply transition-all duration-300 ease-in-out;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+/* Modern loading states */
+.loading-shimmer {
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+/* Smooth page transitions */
+.page-transition {
+  @apply transition-all duration-500 ease-in-out;
+}
+
+/* Modern focus styles */
+.focus-visible:focus-visible {
+  @apply outline-none ring-2 ring-primary-500 ring-offset-2 ring-offset-white dark:ring-offset-gray-900;
+}
+
+/* Animation utility classes */
+.animate-on-scroll {
+  @apply transition-all duration-700 ease-out;
+}
+
+.animate-fade-in {
+  @apply transition-opacity duration-600 ease-out;
+}
+
+.animate-slide-up {
+  @apply transition-all duration-700 ease-out;
+}
+
+.animate-slide-left {
+  @apply transition-all duration-700 ease-out;
+}
+
+.animate-slide-right {
+  @apply transition-all duration-700 ease-out;
+}
+
+/* Stagger delay utilities */
+.animate-delay-100 { transition-delay: 100ms; }
+.animate-delay-200 { transition-delay: 200ms; }
+.animate-delay-300 { transition-delay: 300ms; }
+.animate-delay-400 { transition-delay: 400ms; }
+
+/* Modern scroll behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+/* Dark mode transitions */
+.dark-mode-transition {
+  @apply transition-colors duration-300 ease-in-out;
+}
+
+/* Performance optimizations */
+.will-change-transform {
+  will-change: transform;
+}
+
+.will-change-opacity {
+  will-change: opacity;
+}
+
+/* Modern container styles */
+.modern-container {
+  @apply mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+/* Responsive grid utilities */
+.modern-grid {
+  @apply grid gap-6 md:gap-8 lg:gap-10;
+}
+
+.modern-grid-2 {
+  @apply grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8;
+}
+
+.modern-grid-3 {
+  @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8;
+}
+
+/* Typewriter Animation Styles */
+.typewriter-text {
+  display: inline;
+}
+
+.typewriter-cursor {
+  display: inline-block;
+  color: #3b82f6; /* Blue cursor */
+  animation: blink 1s infinite;
+  font-weight: 400;
+  margin-left: 2px;
+}
+
+@keyframes blink {
+  0%, 50% {
+    opacity: 1;
+  }
+  51%, 100% {
+    opacity: 0;
+  }
+}
+
+/* Dark mode cursor */
+.dark .typewriter-cursor {
+  color: #60a5fa;
+}
+
+/* Typewriter container styles */
+.typewriter-container {
+  min-height: 1.5em; /* Prevent layout shift */
+  display: inline-block;
+}
+
+/* Accessibility: Reduce motion for typewriter */
+@media (prefers-reduced-motion: reduce) {
+  .typewriter-cursor {
+    animation: none;
+    opacity: 1;
+  }
+}
+
+/* Enhanced Scroll Animation Classes */
+/* Initial states for elements before they animate in */
+.enhanced-animate-fade-in {
+  opacity: 0;
+  transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.enhanced-animate-slide-up {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.enhanced-animate-slide-down {
+  opacity: 0;
+  transform: translateY(-40px);
+  transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.enhanced-animate-slide-left {
+  opacity: 0;
+  transform: translateX(40px);
+  transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.enhanced-animate-slide-right {
+  opacity: 0;
+  transform: translateX(-40px);
+  transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.enhanced-animate-scale {
+  opacity: 0;
+  transform: scale(0.8);
+  transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.enhanced-animate-bounce {
+  opacity: 0;
+  transform: scale(0.3);
+  transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+/* Active states when elements are visible */
+.enhanced-animate-fade-in.enhanced-visible {
+  opacity: 1;
+}
+
+.enhanced-animate-slide-up.enhanced-visible,
+.enhanced-animate-slide-down.enhanced-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.enhanced-animate-slide-left.enhanced-visible,
+.enhanced-animate-slide-right.enhanced-visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.enhanced-animate-scale.enhanced-visible,
+.enhanced-animate-bounce.enhanced-visible {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Staggered animation delays for enhanced animations */
+.enhanced-animate-delay-100 { transition-delay: 100ms; }
+.enhanced-animate-delay-200 { transition-delay: 200ms; }
+.enhanced-animate-delay-300 { transition-delay: 300ms; }
+.enhanced-animate-delay-400 { transition-delay: 400ms; }
+.enhanced-animate-delay-500 { transition-delay: 500ms; }
+
+/* Reset classes for when elements leave viewport */
+.enhanced-animate-reset {
+  transition-duration: 0.4s !important;
+}
+
+/* Respect reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  .enhanced-animate-fade-in,
+  .enhanced-animate-slide-up,
+  .enhanced-animate-slide-down,
+  .enhanced-animate-slide-left,
+  .enhanced-animate-slide-right,
+  .enhanced-animate-scale,
+  .enhanced-animate-bounce {
+    transition: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}
