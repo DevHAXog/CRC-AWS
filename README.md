@@ -54,7 +54,7 @@ This Cloud Resume Challenge implementation showcases:
 ## 🛠️ Technology Stack
 
 ### **Frontend**
-- **HTML5 & CSS3**: Semantic markup and modern styling
+- **HTML5**: Semantic markup and modern styling
 - **Tailwind CSS**: Utility-first CSS framework
 - **JavaScript (ES6+)**: Dynamic interactions and API calls
 - **Responsive Design**: Mobile-first approach

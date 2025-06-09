@@ -2,8 +2,7 @@
 <html lang="en" class="dark">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume | Devin Emmans-Bosley</title>    <script src="https://cdn.tailwindcss.com"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    <title>Resume | Devin Emmans-Bosley</title>    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/modern-styles.css"><script>
         tailwind.config = {
@@ -105,9 +104,21 @@
                 <p class="text-gray-600 dark:text-gray-400">Culpeper, VA</p>
                 </div>
             </div>
-        </div>
-    </header><!-- Resume Content -->
-    <main class="pb-20">
+        </div>    </header>    <!-- Download Resume Button -->
+    <div class="fixed bottom-6 right-6 z-40">
+        <a href="assets/Devin_Bosley_Resume.pdf" download="Devin_Bosley_Resume.pdf" 
+                class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 flex items-center gap-2"
+                aria-label="Download resume as PDF"
+                title="Download Devin Bosley's resume as PDF.">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+            </svg>
+            <span>Download Resume</span>
+        </a>
+    </div>
+
+    <!-- Resume Content -->
+    <main id="resume-section" class="pb-20">
         <div class="container mx-auto px-4">
             <div class="max-w-5xl mx-auto"><!-- Summary Section -->
                 <section class="mb-12 animate-on-scroll" data-animate="fade-in">
@@ -443,5 +454,6 @@
     <script src="js/enhanced-scroll-animations.js"></script>
     <script src="js/modern-main.js"></script>
     <script src="js/typewriter.js"></script>
+    <script src="js/scripts.js"></script>
 </body>
 </html>
