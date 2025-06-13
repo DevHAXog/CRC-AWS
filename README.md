@@ -34,7 +34,7 @@ This Cloud Resume Challenge implementation showcases:
 
 ```
 ┌─────────────────┐    ┌──────────────────┐    ┌─────────────────┐
-│   Route 53      │    │   CloudFront     │    │   S3 Bucket     │
+│   PorkBuns      │    │   CloudFront     │    │   S3 Bucket     │
 │   DNS Hosting   │───▶│   CDN + SSL      │───▶│   Static Site   │
 └─────────────────┘    └──────────────────┘    └─────────────────┘
                                 │
@@ -62,7 +62,7 @@ This Cloud Resume Challenge implementation showcases:
 ### **Backend & Cloud Services**
 - **AWS S3**: Static website hosting
 - **AWS CloudFront**: Global CDN with SSL/TLS
-- **AWS Route 53**: DNS management
+- ** PorkBun**: DNS management
 - **AWS Lambda**: Serverless function for visitor counter
 - **AWS DynamoDB**: NoSQL database for visitor count
 - **AWS API Gateway**: RESTful API endpoints
@@ -181,7 +181,7 @@ python -m http.server 8000
 |---------|---------|----------------|
 | **S3** | Static website hosting | Stores HTML, CSS, JS, and assets |
 | **CloudFront** | CDN + SSL/TLS | Global content delivery and HTTPS |
-| **Route 53** | DNS management | Domain registration and routing |
+| **Route 53** | DNS management | Domain routing |
 | **Lambda** | Serverless backend | Visitor counter API endpoint |
 | **DynamoDB** | Database | Stores visitor count data |
 | **API Gateway** | REST API | Exposes Lambda function as HTTP API |
