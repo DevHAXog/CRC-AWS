@@ -98,7 +98,7 @@ This Cloud Resume Challenge implementation showcases:
 │   ├── 📄 variables.tf       # Variable definitions
 │   └── 📄 outputs.tf         # Output values
 ├── 📂 .github/workflows/      # CI/CD pipelines
-│   └── 📄 deploy.yml         # GitHub Actions workflow
+│   └── 📄 main.yml         # GitHub Actions workflow
 └── 📄 README.md              # This file
 ```
 
